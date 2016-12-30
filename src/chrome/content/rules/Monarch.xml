@@ -1,0 +1,32 @@
+<!--
+	Invalid certificate:
+		blog
+		careers
+		crewtraining
+		crewwebportal
+		insurance
+		mountain
+		tipsmap
+
+	Time out:
+		airdata
+		www.partners
+-->
+
+<ruleset name="Monarch.co.uk">
+	<target host="monarch.co.uk" />
+	<target host="www.monarch.co.uk" />
+	<target host="book-hotels.monarch.co.uk" />
+	<target host="carhire.monarch.co.uk" />
+	<target host="mystandbytravel.monarch.co.uk" />
+	<target host="oracle.monarch.co.uk" />
+
+	<!-- Already redirect -->
+	<target host="bookflights.monarch.co.uk" />
+	<target host="mf.monarch.co.uk" />
+	<target host="mpeople.monarch.co.uk" />
+
+	<securecookie host="^((www|book-hotels|carhire|mystandbytravel|oracle)\.)?monarch\.co\.uk$" name=".+" />
+
+	<rule from="^http:" to="https:" />
+</ruleset>
